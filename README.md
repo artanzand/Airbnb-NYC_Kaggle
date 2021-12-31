@@ -1,27 +1,10 @@
-# Kaggle_projects
-This repo will be about implementation of supervised learning essentials on Kaggle datasets from simple models to ensemble models alongwith feature engineering and model selection. For this I will be using cleaned data acquired from Kaggle while walking you through my analysis in individual `.ipynb` files. Details about each dataset is provided in the notebook and below I will mention the machine learning techniques I will be progressing through. As I progress in the project number, I will include the techniques from the earlier projects, and therefore, the last project would be the most complex project for this repo. I will not demonstrate any deep learning techniques in this repo. 
+# Airbnb NYC - Kaggle mini project
+I will be implementing supervised machine learning on the NYC Airbnb [data](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data) from Kaggle using ensemble models alongwith feature engineering and model selection. For this I will be using cleaned data acquired from Kaggle while walking through my analysis in an `.ipynb` file. Details about the dataset is provided in the notebook and below I will mention the machine learning techniques I will be using in this project. 
 
 
-## Spotify Song Attributes [dataset](https://www.kaggle.com/geomack/spotifyclassification/home)
-`Golden Rule`, `Decision Tree`, `data splitting`, `model building`, `hyperparameters`, `Dummy classification`, `cross validation`, `matplotlib`
+## New York City Airbnb Open [data](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data)
+`Golden Rule`
 
-## The Adult Census [dataset](https://www.kaggle.com/uciml/adult-census-income#)
-`K Nearest Neighbors (KNN)`, `Support Vector Machine (RBF SVM)`, `Exploratory Data Analysis (EDA)`, `column transformation`, `preprocessing`, `imputation`, `OneHotEncoder`, `OrdinalEncoder`, `StandardScaler`, `altair`
-
-## SMS Spam Detection [dataset](https://www.kaggle.com/uciml/sms-spam-collection-dataset)
-`text classification`, `CountVectorizer`, `model selection`, `hyperparameter optimization` , `GridSearchCV`, `RandomizedSearchCV`, `pipeline`, `ColumnTransformer`
-
-## Happy DB [dataset](https://www.kaggle.com/ritresearch/happydb)
-`Naive Bayes`, `BernoulliNB`, `MultinomialNB`, `Logistic Regression`
-
-## Churn in Telecom [dataset](https://www.kaggle.com/becksddf/churn-in-telecoms-dataset)
-`Random Forest`,`Ridge`, `confusion matrix`, `classification report`, `F1 score`, `Recall`, `Precision`, `Area Under Curve (AUC)`, `PR curve`, `ROC curve`, `ROC AUC score`, `RMSE`, `MAPE score`, `make_scorer`
-
-## Disaster Tweets [dataset](https://www.kaggle.com/vstepanenko/disaster-tweets)
-`Polynomial features`, `RidgeCV`, `RFECV`, `Sequential Feature Selector`, `Forward Selection`, `Backward Selection`, `Recursive Selection`
-
-## Spotify Tracks DB [dataset](https://www.kaggle.com/zaheenhamidani/ultimate-spotify-tracks-db)
-`SHAP`, `feature_importances_`, `Ensembles`, `Voting model`, `Stacking model`, `Random Forest`, `Gradient Boosted Trees`, `XGBoost`, `LightGBM`, `CatBoost`,
 
 <br>
 
@@ -39,16 +22,10 @@ To use the Kaggle API, sign up for a Kaggle account at https://www.kaggle.com. T
 ## To download the data files
 Run the following commands at the command line/terminal from the root directory of the project to download the data files in a `/downloads` folder:
 ```
-make all
+python src/download_data.py --dataset=dgomonov/new-york-city-airbnb-open-data --file_path=downloads/
 ```
 
-To reset the repo to the original state, and delete all downloaded files from Kaggle, run the following commands at the command line/terminal from
-the root directory of the project:
-```
-make clean
-```
-
-You can now run each individual notebook file.
+You can now run the notebook file.
 
 
 # To contribute to the repository:
