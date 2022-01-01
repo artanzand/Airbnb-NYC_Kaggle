@@ -1,10 +1,15 @@
 # Airbnb NYC - Kaggle mini project
+The intention of this mini project is to explore the data, do the preprocessing, build the optimized model and score it on the test data under 8 hours. I will record my lessons learned and what I could have done better for future projects at the end of the notebook.
+
 I will be implementing supervised machine learning on the NYC Airbnb [data](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data) from Kaggle using ensemble models alongwith feature engineering and model selection. For this I will be using cleaned data acquired from Kaggle while walking through my analysis in an `.ipynb` file. Details about the dataset is provided in the notebook and below I will mention the machine learning techniques I will be using in this project. 
 
 
 ## New York City Airbnb Open [data](https://www.kaggle.com/dgomonov/new-york-city-airbnb-open-data)
-`Golden Rule`
+### Processes
+`Exploratory Data Analysis`, `Preprocessing`, `Feature Engineering`, `Feature Selection`, `Hyperparameter Optimization`, `Interpretation and feature importance`, `Ensembles`
 
+### Tools and Model
+`ScikitLearn`, `pandas`, `Altair`, `SHAP`, `VotingRegressor`, `StackingRegressor`, `CatBoostRegressor`, `LGBMRegressor`, `Random Forest`, `Ridge`, `Lasso`, `Suppor Vector Machine (SVC)`, `CountVectorizer`, `RandomizedSearchCV`, `RFECV`, `cross_validate`, `pipeline`, `column_transformer`, `SelectFromModel`, `OneHotEncoder`, `StandardScaler`
 
 <br>
 
@@ -19,7 +24,7 @@ conda activate Kaggle_projects
 ## Setting up Kaggle API
 To use the Kaggle API, sign up for a Kaggle account at https://www.kaggle.com. Then go to the 'Account' tab of your user profile (https://www.kaggle.com/<username>/account) and select 'Create API Token'. This will trigger the download of kaggle.json, a file containing your API credentials. Place this file in the location `~/.kaggle/kaggle.json`. I have already included the `kaggle` package in the repo environment, and running the below script should download the required files. 
 
-## To download the data files
+## To download the data file
 Run the following commands at the command line/terminal from the root directory of the project to download the data files in a `/downloads` folder:
 ```
 python src/download_data.py --dataset=dgomonov/new-york-city-airbnb-open-data --file_path=downloads/
