@@ -9,7 +9,7 @@ I will be implementing supervised machine learning on the NYC Airbnb [data](http
 `Exploratory Data Analysis`, `Preprocessing`, `Feature Engineering`, `Feature Selection`, `Hyperparameter Optimization`, `Interpretation and feature importance`, `Ensembles`
 
 ### Tools and Model
-`ScikitLearn`, `pandas`, `Altair`, `SHAP`, `eli5`, `VotingRegressor`, `StackingRegressor`, `CatBoostRegressor`, `LGBMRegressor`, `Random Forest`, `Ridge`, `Lasso`, `Suppor Vector Machine (SVR)`, `CountVectorizer`, `RandomizedSearchCV`, `RFECV`, `cross_validate`, `pipeline`, `column_transformer`, `SelectFromModel`, `OneHotEncoder`, `StandardScaler`
+`ScikitLearn`, `pandas`, `Altair`, `SHAP`, `eli5`, `CatBoostRegressor`, `LGBMRegressor`, `Random Forest`, `Ridge`, `Lasso`, `Suppor Vector Machine (SVR)`, `CountVectorizer`, `RandomizedSearchCV`, `RFECV`, `cross_validate`, `pipeline`, `column_transformer`, `SelectFromModel`, `OneHotEncoder`, `StandardScaler`
 
 <br>
 
